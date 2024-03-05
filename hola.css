@@ -1,0 +1,73 @@
+
+
+#hero{/*contenido principal del body*/
+    min-height: 80vh;/*Altura minima del elemento*/
+    min-width: 80vh; /*anchura minima del elemento*/
+    position: relative;/*posicion por defecto*/
+}
+
+.prueba1{ /*bloque del formulario*/
+    padding-top: 200px;/*relleno de la parte superior del elemento*/
+    display: flex; /*ayuda a adaptar los elementos*/
+    flex-direction: column; /* determina la dirección en que se ordenarán los elementos en el espacio*/
+    justify-content: center; /*contenido centrado*/
+    align-items: center;/*controla la alineacion de elementos*/
+    width: 60%;/*ancho de elementos*/
+    margin: auto;/*centra automaticamente dentro del contenedor*/
+    position: relative; /*posicion por defecto*/
+    z-index: 1;/*indica el orden de un elemento posicionado y sus descendientes.*/
+}
+
+
+video{/*contenedor del video*/
+    position:absolute; /*abarca toda la pantalla*/
+    top: 0; /*borde superior*/
+    left: 0; /*borde izquiero */
+    width: 100%;/*ancho de elementos*/
+    height: 100%;/*altura de elementos*/
+    object-fit: cover;/*control de grano fino sobre cómo cubre 
+    y se extiende dentro de su caja.*/
+}
+#video-brackgrund{ /*contenedor del video*/
+    position: absolute;/*abarca toda la pantalla*/
+    top: 0;/*borde superior*/
+    left: 0; /*borde izquiero */
+    width: 100%;/*ancho de elementos*/
+    height: 100%;/*altura de elementos*/
+    object-fit: cover;/*control de grano fino sobre cómo cubre 
+    y se extiende dentro de su caja.*/
+}
+
+.capa{ /*resolucion*/
+    position:absolute;/*abarca toda la pantalla*/
+    top: 0;/*borde superior*/
+    left: 0;/*borde izquiero */
+    width: 100%;/*ancho de elementos*/
+    height: 100%;/*altura de elementos*/
+    background-color: black; /*color de fondo*/
+    opacity: 0.5; /*transparencia del elemento*/
+    mix-blend-mode: overlay;/*Color final del pixel*/
+
+}
+
+
+.row{ /*contenedor de formulario*/
+    width: 600px;/*ancho de elementos*/
+    background: transparent;/*permite cambiar el fondo por cualquier*/
+    border: 2px solid rgba(255,255,255,0.2); /*tamaño de borde y color*/
+    backdrop-filter: blur(20px);/*permite el desenfoque del contenedor*/
+    box-shadow: 0 0 80px rgba(0,0,0,0.2); /*sombra difuminada*/
+    color:rgb(46, 116, 177);/*color de letra*/
+    border-radius: 100px; /*bordes del contenedor*/
+    padding: 1px 2px; /*area de relleno de los lados*/
+    justify-content: center;/*contenido centrado*/
+    position: fixed;/*se coloca con respecto a viewport*/
+    margin-left: 355px;/*margen izquierdo*/
+}
+
+#icono{ /*imagen*/
+    height: 120px;/*altura de un elemento*/
+    border-radius: 100%;/*hace el circulo*/
+    margin-top: -120px;/*margen superior*/
+    margin-left: -250px;/*margen izquierdo*/
+}

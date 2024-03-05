@@ -1,0 +1,48 @@
+<!DOCTYPE html><!--informa al navegdor que version de HTML se ocupa-->
+<html lang="en"><!--se utiliza para comenzar a estructurar y el idioma-->
+<head><!--información general acerca del documento, incluyendo su título y
+    enlaces a scripts y hojas de estilos-->
+    <meta charset="UTF-8"><!--responsable de que se muestre el contenido correctamente y con caracteres-->
+    <!-- metaetiqueta mediante la que se establece si se puede hacer zoom en una página, el zoom inicial o 
+        la anchura de la pantalla del dispositivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><!--se encarga de dale titulo a la pestaña de la pagina-->
+    <!--se enlaza una hoja de estilo-->
+    <link rel="stylesheet" type="text/css" href="hola.css">
+</head><!--se cierra la parte de la informacion general-->
+
+<body> <!--se escribe el contenido que ira dentro de la pagina web-->
+    <div><!--se emplea para definir un bloque de contenido o sección de la página, para poder aplicarle diferentes estilos e 
+        incluso para realizar operaciones sobre ese bloque específico-->
+
+        <!--se agrega un video que se reproduzca solo el cual ira de fondo-->
+        <video muted autoplay loop id="video-brackground">
+            <!--se coloca en enlace del video el cual se coloco en la carpeta-->
+            <source src="video1.mp4"
+            type="video/mp4"> <!--agregamos de que tipo es-->
+        </video> <!--se termina lo que define al video-->
+    </div><!--cerramos el contenedor del video-->
+        <div class="capa"></div> <!--creamos otro contenedor con la clase que hara que nuestro video se vea de mejor calidad-->
+     
+    <div class="row"><!--se crea una clase la cual sera el contenedor del formulario-->
+    <main id="hero"> <!--contenido principal del body-->
+  
+        <div class="prueba1"><!--bloque de formulario-->
+            <img src="imagen.png" alt="nueva imagen" id="icono"> <!--se agrega la imagen que tendra dentro-->
+            <div class="col-sm-6"> <!--se utiliza para resolucion-->
+            <div class="tex-center mt-4"> <!--se usa para tener el contenido h1 centrado-->
+            <h1>REGISTRO DE USUARIO</h1><!--titulo del formulario-->
+        </div> <!--se termina la parte del h1-->
+    </div><!--se termina la clase col-->
+            <input type="text" placeholder="Usuario"><!--la bandeja que llenara el usuario tendra un texto-->
+            <input type="password" placeholder="Contraseña"><!--la bandeja que llenara el usuario tendra un texto-->
+            <input type="email" placeholder="Correo Electronico"><!--la bandeja que llenara el usuario tendra un texto-->
+            <button>Registrar</button><!--al momento de terminar el formulario se cliquea-->
+        </div><!--se termina el bloque del formulario-->
+     
+        </div><!--se termina row-->
+
+    </main><!--se termina el contenido principal-->
+</body><!--se termina lo que ira dentro de la pagina web-->
+
+</html><!--fin de la estructura-->
